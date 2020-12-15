@@ -1,0 +1,51 @@
+bool isSlotAvailable( approvedLeaves , requestedLeave )
+{
+  int n=size of approvedLeaves;
+  for(int i=0;i<n;i++)
+  {
+    if(isCheck(approvedLeaves[i],requestedLeave))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+struct date
+{
+  // Leave start date variables
+  int dd1;
+  int mm1;
+  int yy1;
+  
+  
+  //Leave end date variables
+  int dd2;
+  int mm2;
+  int yy2;
+ };
+  
+  
+  // This method is Check which will check whether two dates are overlapping or not
+  //Pass by reference
+bool isCheck(date &date_1,date &date_2)
+{
+  if(date_2.yy2<date_1.yy1||date_2.yy1>date_1.yy2)
+    return true;
+  else if(date_1.yy1==date_1.yy2)
+  {
+    if(date2.mm2<date_1.mm1||date_2.mm1>date_1.mm2)
+      return true;
+    else if(date1.mm1==date_1.mm2)
+      {
+        if(date_2.dd2<date_1.dd1||date_2.dd1>date_1.dd2)
+        {
+        return true;
+        }
+        else
+        return false;
+      }
+   }
+  }
+        
+  
+  
